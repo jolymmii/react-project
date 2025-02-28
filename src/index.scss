@@ -93,35 +93,6 @@ header {
 	cursor: pointer;
 }
 
-.drawer {
-	position: absolute;
-	width: 420px;
-	right: 0;
-	height: 100%;
-	background: #ffffff;
-	box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
-	padding: 30px;
-	display: flex;
-	flex-direction: column;
-
-	h2 {
-		margin: 0;
-	}
-	.cart__item {
-		overflow: auto;
-		margin-bottom: 40px;
-	}
-}
-.overlay {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	background-color: rgb(0, 0, 0, 0.5);
-	z-index: 1;
-}
-
 .cart__item {
 	border: 1px solid #f3f3f3;
 	border-radius: 20px;
@@ -173,6 +144,9 @@ header {
 	}
 	.green__button {
 		position: relative;
+		&:disabled {
+			animation: button-loading 0.8s ease-in-out infinite;
+		}
 
 		&:hover {
 			img {
@@ -199,6 +173,11 @@ header {
 	font-weight: 500;
 	transition: background 0.2s ease-in-out;
 
+	&:disabled {
+		background-color: #bebebe;
+		cursor: pointer;
+	}
+
 	&:hover {
 		background: lighten(#9dd558, $amount: 5%);
 	}
@@ -209,4 +188,20 @@ header {
 
 .cart__itmes {
 	flex: 1;
+}
+
+@keyframes button-loading {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.infoEmpty {
+	height: 60vh;
 }
