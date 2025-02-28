@@ -52,7 +52,11 @@ function Card({
 					{onFavorite && (
 						<div className='fav' onClick={onClickFavorite}>
 							<img
-								src={isFavorited ? '/img/liked.svg' : '/img/unliked.svg'}
+								src={
+									isFavorited
+										? '/react-project/img/liked.svg'
+										: '/react-project/img/unliked.svg'
+								}
 								alt={isFavorited ? 'liked' : 'unliked'}
 							/>
 						</div>
@@ -70,8 +74,8 @@ function Card({
 								onClick={onClickPlus}
 								src={
 									isItemAdded(id)
-										? '/img/btn-checked.svg'
-										: '/img/btn-not-checked.svg'
+										? '/react-project/img/btn-checked.svg'
+										: '/react-project/img/btn-not-checked.svg'
 								}
 								alt='Добавить в корзину'
 							/>

@@ -34,7 +34,7 @@ function Orders() {
 				<InfoEmpty
 					title='У вас нет заказов'
 					description='Оформите хотя бы один заказ..'
-					image='/img/emptyOrder.png'
+					image='/react-project/img/emptyOrder.png'
 					className='favorites-info'
 				/>
 			)}

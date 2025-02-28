@@ -61,7 +61,7 @@ function Favorites() {
 				<InfoEmpty
 					title='Закладок нет :('
 					description='Вы ничего не добавляли в закладки.'
-					image='/img/empty-favorites.png'
+					image='/react-project/img/empty-favorites.png'
 				/>
 			)}
 		</div>

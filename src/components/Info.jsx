@@ -15,7 +15,7 @@ const Info = ({ title, image, description }) => {
 			<h2>{title}</h2>
 			<p className='opacity-6'>{description}</p>
 			<button className='green__button'>
-				<img src='/img/arrow.svg' alt='arrow' />
+				<img src='/react-project/img/arrow.svg' alt='arrow' />
 				Вернуться назад
 			</button>
 		</div>

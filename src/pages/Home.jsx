@@ -46,11 +46,11 @@ function Home({
 						<img
 							className='clear cu-p'
 							onClick={() => setSearchValue('')}
-							src='/img/remove.svg'
+							src='/react-project/img/remove.svg'
 							alt='close'
 						/>
 					)}
-					<img src='/img/Serach.svg' alt='search' />
+					<img src='/react-project/img/Serach.svg' alt='search' />
 					<input
 						onChange={onChangeSearchInput}
 						value={searchValue}

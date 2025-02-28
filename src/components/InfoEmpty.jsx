@@ -15,7 +15,7 @@ const InfoEmpty = ({ title, image, description }) => {
 			<p className='opacity-6'>{description}</p>
 			<Link to='/'>
 				<button className='green__button'>
-					<img src='/img/arrow.svg' alt='arrow' />
+					<img src='/react-project/img/arrow.svg' alt='arrow' />
 					Вернуться назад
 				</button>
 			</Link>
