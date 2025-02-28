@@ -8,7 +8,7 @@ import App from './App'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
 	<React.StrictMode>
-		<Router basename='/react-project'>
+		<Router basename='/react-project/'>
 			<App />
 		</Router>
 	</React.StrictMode>
